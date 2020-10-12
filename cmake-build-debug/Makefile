@@ -143,6 +143,33 @@ WildLime/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WildLime.dir/build.make CMakeFiles/WildLime.dir/build
 .PHONY : WildLime/fast
 
+Lime.o: Lime.cpp.o
+
+.PHONY : Lime.o
+
+# target to build an object file
+Lime.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WildLime.dir/build.make CMakeFiles/WildLime.dir/Lime.cpp.o
+.PHONY : Lime.cpp.o
+
+Lime.i: Lime.cpp.i
+
+.PHONY : Lime.i
+
+# target to preprocess a source file
+Lime.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WildLime.dir/build.make CMakeFiles/WildLime.dir/Lime.cpp.i
+.PHONY : Lime.cpp.i
+
+Lime.s: Lime.cpp.s
+
+.PHONY : Lime.s
+
+# target to generate assembly for a file
+Lime.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WildLime.dir/build.make CMakeFiles/WildLime.dir/Lime.cpp.s
+.PHONY : Lime.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +206,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... WildLime"
+	@echo "... Lime.o"
+	@echo "... Lime.i"
+	@echo "... Lime.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

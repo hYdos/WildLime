@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/hayden/CLionProjects/WildLime/Lime.cpp">
+			<Option target="WildLime"/>
+		</Unit>
+		<Unit filename="/home/hayden/CLionProjects/WildLime/Lime.h">
+			<Option target="WildLime"/>
+		</Unit>
 		<Unit filename="/home/hayden/CLionProjects/WildLime/main.cpp">
 			<Option target="WildLime"/>
 		</Unit>

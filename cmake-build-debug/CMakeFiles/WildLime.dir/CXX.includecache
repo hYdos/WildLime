@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/hayden/CLionProjects/WildLime/main.cpp
+/home/hayden/CLionProjects/WildLime/Lime.cpp
+Lime.h
+/home/hayden/CLionProjects/WildLime/Lime.h
+
+/home/hayden/CLionProjects/WildLime/Lime.h
 GLFW/glfw3.h
 -
 iostream
@@ -15,4 +19,8 @@ stdexcept
 -
 cstdlib
 -
+
+/home/hayden/CLionProjects/WildLime/main.cpp
+Lime.h
+/home/hayden/CLionProjects/WildLime/Lime.h
 

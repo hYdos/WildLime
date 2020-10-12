@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/WildLime.dir/Lime.cpp.o"
   "CMakeFiles/WildLime.dir/main.cpp.o"
   "WildLime"
   "WildLime.pdb"

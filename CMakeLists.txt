@@ -7,7 +7,7 @@ find_package(glfw3 REQUIRED)
 find_package(glm REQUIRED)
 find_package(Vulkan REQUIRED)
 
-add_executable(WildLime main.cpp)
+add_executable(WildLime main.cpp Lime.cpp Lime.h)
 
 target_link_libraries(WildLime glfw)
 target_link_libraries(WildLime glm)
