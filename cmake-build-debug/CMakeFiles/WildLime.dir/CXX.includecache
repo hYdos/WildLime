@@ -7,8 +7,14 @@
 #IncludeRegexTransform: 
 
 /home/hayden/CLionProjects/WildLime/Lime.cpp
+vector
+-
 Lime.h
 /home/hayden/CLionProjects/WildLime/Lime.h
+stdexcept
+-
+cstring
+-
 
 /home/hayden/CLionProjects/WildLime/Lime.h
 GLFW/glfw3.h
@@ -19,6 +25,8 @@ stdexcept
 -
 cstdlib
 -
+vector
+/home/hayden/CLionProjects/WildLime/vector
 
 /home/hayden/CLionProjects/WildLime/main.cpp
 Lime.h

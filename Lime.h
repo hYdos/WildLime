@@ -7,6 +7,7 @@
 #include <iostream>
 #include <stdexcept>
 #include <cstdlib>
+#include "vector"
 
 class Lime {
 public:
@@ -25,8 +26,9 @@ private:
 #else
     const bool enableValidationLayers = true;
 #endif
+    VkDebugUtilsMessengerEXT debugMessenger;
 
-
+    //VK vars
     VkInstance instance;
     VkApplicationInfo applicationInfo{};
 
@@ -34,12 +36,28 @@ private:
     unsigned int WIDTH;
     unsigned int HEIGHT;
 
+    void createInstance(VkApplicationInfo info);
 
-    void initVulkan() {
+    std::vector<const char *> getRequiredExtensions();
 
-    }
+    bool checkSystemSupportsValidation();
 
-    VkInstance createInstance(VkApplicationInfo info);
+    static VKAPI_ATTR VkBool32 VKAPI_CALL debugCallback(
+            VkDebugUtilsMessageSeverityFlagBitsEXT severity,
+            VkDebugUtilsMessageTypeFlagsEXT msgType,
+            const VkDebugUtilsMessengerCallbackDataEXT* pCallbackData,
+            void* pUserData);
+
+    void setupDebugMessenger();
+
+    VkResult createDebugUtilsMessengerEXT(VkInstance instance, const VkDebugUtilsMessengerCreateInfoEXT *pCreateInfo,
+                                          const VkAllocationCallbacks *pAllocator,
+                                          VkDebugUtilsMessengerEXT *pDebugMessenger);
+
+    void populateDebugMessengerCreateInfo(VkDebugUtilsMessengerCreateInfoEXT &createInfo);
+
+    void destroyDebugUtilsMessengerEXT(VkInstance instance, VkDebugUtilsMessengerEXT debugMessenger,
+                                       const VkAllocationCallbacks *pAllocator);
 };
 
 
